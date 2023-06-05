@@ -10,7 +10,7 @@ export default function Home() {
   }, [])
 
   async function getTime() {
-    const res = await fetch('http://worldtimeapi.org/api/timezone/America/Chicago')
+    const res = await fetch('https://worldtimeapi.org/api/timezone/America/Chicago')
     const data = await res.json()
     console.log("data: ", data.datetime)
 
